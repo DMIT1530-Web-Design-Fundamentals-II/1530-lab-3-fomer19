@@ -7,3 +7,153 @@
   --green: #8BC34A;
   --white: #FAFAFA;
 }
+header {
+  display: flex;
+  background-color: var(--dk-grey);
+  font-family: "Nunito", sans-serif;
+  height: 4rem;
+  align-items: center;
+}
+h1{
+  letter-spacing: 0.45rem;
+  color: white;
+  left: 18rem;
+  position: relative;
+}
+h1::first-letter {
+  color: #EC407A;
+}
+.controller{
+  width: 4rem;
+  display: none;
+  margin-left: 35rem;
+}
+nav{
+  left: 23rem;
+  position: relative;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav li {
+  position: relative;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  position: relative;
+  margin: 0 1rem 0 1rem;
+}
+nav img {
+  width: 1rem;
+}
+ul.submenu-one, ul.submenu-two, ul.submenu-three {
+  display: none;
+  position: absolute;
+  background-color: var(--dk-grey);
+  margin-top: 1.75rem;
+  margin-left: -1rem;
+  width: 22rem;
+}
+ul.submenu-one li, ul.submenu-two li, ul.submenu-three li {
+  display: block;
+  color: var(--white);
+  line-height: 3rem;
+  font-weight: 100;
+  text-transform: none;
+  left: 2rem;
+}
+nav li:hover .submenu-one, nav li:hover ul.submenu-two, nav li:hover ul.submenu-three{
+  display: block;
+}
+ul.submenu-one:hover{
+  display: block;
+}
+.games{
+  padding-right: 15rem;
+}
+.schedule{
+  padding-right: 12.5rem;
+}
+main{
+  background: url(../img/crowd-background.webp) center / cover no-repeat;
+  height: 77rem;
+  margin: 0rem;
+  max-width: 100%;
+}
+section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.inner-container {
+  background-color: #FAFAFA;
+  width: 23.5rem;
+  padding: 2rem;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  margin-top: 17rem;
+  height: 23rem;
+  border-radius: 0.35rem;
+  box-shadow: 5px 5px 5px #00000045;
+}
+.inner-container p{
+  width: 17rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+h2{
+  font-size: 2.25rem;
+  margin-top: 2rem;
+}
+h2::first-letter {
+  color: #EC407A;
+}
+.btn{
+  color: #FAFAFA;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 1.25rem;
+  padding: 1rem 2.9rem;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #EC407A, #F6A04E);
+  border-radius: 5rem;
+  box-shadow: 4px 3px 3px #00000025;
+}
+@media screen and (max-width: 950px){
+  header {
+    height: 5.5rem;
+  }
+  h1 {
+    left: 4rem;
+    font-size: 2.75rem;
+  }
+  .inner-container {
+    width: 30.5rem;
+    height: 28.25rem;
+  }
+  .inner-container p {
+    width: 21rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+  .btn {
+    margin-top: 2.25rem;
+  }
+  h2 {
+    font-size: 2.85rem;
+    margin-top: 2.75rem;
+  }
+  .controller{
+    display: inline;
+  }
+  nav{
+    display: none;
+  }
+}
